@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
+
+body {
+    background: #fafafa;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#userName {
+    border: none;
+    border-bottom: solid 2px #444444;
+    background-color: #f1f1f1;
+    font-size: 40px;
+    padding: 10px
+}
+
+#userName:focus {
+    outline: none;
+}
+
+.formWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.keyboard {
+    width: 850px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: azure;
+}
+
+.row {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row div {
+    display: flex;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: solid 1px #cacaca;
+}
+
+.key:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #cfcfcf
+}
+
+.none:not(#del) {
+    color: rgba(0,0,0,0);
+    cursor: not-allowed;
+}
+
+.none:not(#del):hover {
+    background-color: #ffd4d4
+}
+
+#del {
+    width: 75px;
+}
+
+#tab {
+    width: 70px;
+}
+
+#caps {
+    width: 80px;
+}
+
+#enter {
+    width: 80px;
+}
+
+#slash {
+    width: 60px;
+}
+
+#shift {
+    width: 110px;
+}
+
+#shift2 {
+    width: 70px;
+}
+
+#space {
+    width: 300px;
+    background-size: cover;
+}
+
+footer {
+    font-size: 12px;
+    color: silver;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    font-style: italic;
+    color: paleviolet;
+}
